@@ -1,0 +1,78 @@
+Q1) Write a java code with the class named ‘acad’ and a method ‘main’. Hardcode the program
+with two integers and print the sum of those two.
+
+public class acad {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    int a=1, b=2;
+    int sum=0;
+    sum = a+b;
+    System.out.print("Sum of "+a+" and "+b+" is "+sum);
+	}
+
+}
+
+Output:
+Sum of 1 and 2 is 3
+
+Q2) Rewrite the above code, where, inputs are provided by the user at runtime and the output
+is printed.
+
+import java.util.Scanner;
+
+public class acad {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the value of a");
+	int a= sc.nextInt();
+	System.out.println("Enter the value of b");
+	int b= sc.nextInt();
+    int sum=0;
+    sum = a+b;
+    System.out.print("Sum of "+a+" and "+b+" is "+sum);
+	}
+
+}
+
+Output:
+Enter the value of a
+4
+Enter the value of b
+5
+Sum of 4 and 5 is 9
+
+Q3) Write a program with method name sum() that accepts two parameters from user and print
+the sum two numbers. Output format should be as:
+
+import java.util.Scanner;
+
+public class acad {
+	public void sum(int a1, int b1){
+		 int sum=0;
+		 sum = a1+b1;
+			System.out.println("Sum of "+a1+" and "+b1+" is "+sum);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the value of a1");
+	int a1= sc.nextInt();
+	System.out.println("Enter the value of b1");
+	int b1= sc.nextInt();
+    acad a = new acad();
+	a.sum(a1,b1);
+	}
+
+}
+
+Output:
+Enter the value of a1
+3
+Enter the value of b1
+4
+Sum of 3 and 4 is 7
